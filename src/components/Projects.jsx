@@ -42,7 +42,7 @@ function Portfolio() {
 
 
   return (
-    <div className='portfolio' id='Portfolio'>
+    <div className='portfolio' id='projects'>
       <h2>My Projects</h2>
       <div className="Bar"></div>
 
