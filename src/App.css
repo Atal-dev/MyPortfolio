@@ -27,8 +27,6 @@ p {
 
 
 /* Header Section */
-/* Header Styles */
-/* styles.css */
 header {
   position: sticky;
   top: 0;
@@ -297,7 +295,7 @@ nav {
 /* For Mobile Devices */
 @media (max-width: 500px) {
   .hero-section {
-    padding: 50px 20px;
+    padding: 20px 20px;
     flex-direction: column;
     text-align: center; /* Center the text for mobile */
   }
@@ -585,6 +583,9 @@ nav {
 @media (max-width:550px){
 .skill-card{
     width: 46%;
+  }
+  .skills-section{
+    padding: 150px 20px;
   }
 }
 

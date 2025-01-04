@@ -6,34 +6,34 @@ import { FaLink } from "react-icons/fa";
 function Portfolio() {
     const portfolio = [
         {
-           img : './project1.png',
+           img : './codedev.png',
            name: "Code Dev",
            decription: "I created a website for a professional IT solutions company that was designed for SEO, SMM, and a smooth user experience to increase traffic and engagement.",
            url: "https://www.codedevservices.com/"
         },
+        // {
+        //     img : './project1.png',
+        //     name: "The world or RH",
+        //     decription: "I helped with the construction and performance marketing of a high-end home goods website, improving user experience and increasing traffic using SEO and SMM tactics.",
+        //     url: "https://rh.com/us/en/"
+        // },
         {
-            img : './project1.png',
-            name: "The world or RH",
-            decription: "I helped with the construction and performance marketing of a high-end home goods website, improving user experience and increasing traffic using SEO and SMM tactics.",
-            url: "https://rh.com/us/en/"
-        },
-        {
-            img : './project1.png',
+            img : './alchemy.png',
             name: "Alchemy Design",
             decription: "I created a website for luxury interior design, maximizing SEO and SMM to increase exposure and customer interaction.",
             url: "https://www.alchemydesign.ae/"
         },
+        // {
+        //     img : './project1.png',
+        //     name: "Digital Silk",
+        //     decription: "A digital agency website I enhanced with optimized development, SEO, and SMM strategies to drive traffic and improve performance.",
+        //     url: "https://www.digitalsilk.com/"
+        // },
         {
-            img : './project1.png',
-            name: "Digital Silk",
-            decription: "A digital agency website I enhanced with optimized development, SEO, and SMM strategies to drive traffic and improve performance.",
-            url: "https://www.digitalsilk.com/"
-        },
-        {
-            img : './project1.png',
-            name: "Diva Boutique",
-            decription: "An online fashion store I developed, focusing on SEO and SMM to boost visibility, traffic, and online sales.",
-            url: "https://www.divaboutiqueonline.com/"
+            img : './portfolio.png',
+            name: "My Portfolio",
+            decription: "This portfolio showcases my skills as a front-end developer and highlights the web products I have developed. The site is designed to provide an interactive and visually appealing way for potential clients or employers to view my work and learn more about my technical abilities.",
+            url: "https://my-portfolio-two-eta-38.vercel.app/"
         },
         
         
