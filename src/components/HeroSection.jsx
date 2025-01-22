@@ -16,7 +16,7 @@ const HeroSection = () => {
         transition={{ duration: 1 }}
         className="hero-content"
       >
-        <h1>Hello, I'm <span>DEVANSHU ATAL</span>  MERN Stack Developer</h1>
+        <h1>Hello, I'm <span>DEVANSHU ATAL</span>  Front-end Developer</h1>
         <p>Building dynamic and responsive web applications.</p>
         <p>Experienced frontend developer with a passion for creating visually stunning and user-friendly websites</p>
 
