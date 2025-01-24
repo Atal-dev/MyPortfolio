@@ -11,13 +11,16 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import ExperienceSection from './components/ExperienceSection';
 import ServicesSection from './components/ServicesSection';
+import Theme from './components/Theme';
 
 function App() {
   const [count, setCount] = useState(0)
+  
 
   return (
     <>
        <div className="App">
+      <Theme/>
       <Header />
       <HeroSection />
       <About />

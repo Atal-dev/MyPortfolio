@@ -1,0 +1,88 @@
+/* Modal Overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: var(--text-color); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #ccc;
+    padding: 30px;
+    border-radius: 10px;
+    width: 400px;
+    position: relative;
+    text-align: center;
+  }
+  .modal-content h2 {
+    color: var(--text-color);
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    /* color: white; */
+    cursor: pointer;
+  }
+  
+  /* Form Styling */
+  .appointment-form input,
+  .appointment-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #333;
+    /* background-color: var(); */
+    /* color: white; */
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .appointment-form input::placeholder,
+  .appointment-form textarea::placeholder {
+    color: #666;
+  }
+  
+  .appointment-form .submit-button {
+    background-color: var(--text-color);
+    color: black;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .appointment-form .submit-button:hover {
+    background-color: var(--text-color);
+  }
+  
+  /* Social Icons */
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .social-icons a {
+    /* color: white; */
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: var(--text-color);
+  }

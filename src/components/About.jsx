@@ -1,10 +1,27 @@
-import React from "react";
+import React, { useEffect } from "react";
+import gsap from "gsap";
 import profilePic from "../assets/profile-pic.jpg"; // Add the same profile image here
 import { MdOutlineSubdirectoryArrowRight } from "react-icons/md";
 import { MdEmail } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
+import './About.css'
 
 const About = () => {
+
+  useEffect(() =>{
+    const contex=gsap.context(() =>{
+      var timeline =gsap.timeline()
+
+gsap.from(".about-photo",{
+    y:-30,
+    opacity:0,
+    duration:0.5,
+    delay:0.5
+})
+
+    });
+    return () => contex.revert();
+  },[]);
   return (
     <section id="about" className="about-section">
       <div className="about-container">

@@ -1,0 +1,135 @@
+/* Contact Section Styling */
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 150px 50px;
+    /* background-color: #000; */
+    /* color: white; */
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  /* Contact Info Styling */
+  .contact-info {
+    width: 40%;
+  }
+  
+  .contact-info h3 {
+    font-size: 18px;
+    color: var(--text-color);
+  }
+  
+  .contact-info h2 {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+  
+  .contact-info h2 span {
+    color: var(--text-color);
+  }
+  
+  .contact-info p {
+    margin: 20px 0;
+    /* color: #a5a5a5; */
+  }
+  
+  .expertise-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .expertise-list li {
+    font-size: 16px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .expertise-list li span {
+    color: var(--text-color);
+    margin-right: 10px;
+    font-size: 20px;
+  }
+  
+  /* Contact Form Container */
+  .contact-form-container {
+    width: 50%;
+  }
+  
+  /* Grid Layout for the Form */
+  .contact-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  /* Styling for Form Elements */
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    background-color: transparent;
+    /* color: white; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  textarea {
+    resize: none;
+    height: 100px;
+  }
+  
+  /* Submit Button Styling */
+  .submit-btn {
+    grid-column: span 2;
+    padding: 15px 20px;
+    background-color: var(--text-color);
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .submit-btn:hover {
+    background-color: var(--text-color);
+  }
+  
+  /* Media Queries for Responsiveness */
+  
+  /* For Tablets and Small Laptops */
+  @media (max-width: 1024px) {
+    .contact-section {
+      flex-direction: column;
+      justify-content: center;
+    }
+    .contact-info {
+      width: 100%;
+    }
+    .contact-form-container {
+      width: 100%;
+    }
+  }
+  
+  /* For Screens Less Than 500px */
+  @media (max-width: 500px) {
+    .contact-form {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+    .contact-section {
+      padding: 50px 20px;
+    }
+  }
+  

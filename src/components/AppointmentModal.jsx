@@ -1,5 +1,5 @@
 import React from 'react';
-// import './styles.css'; // Ensure your modal styles are here
+import './AppointmentModal.css';
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";

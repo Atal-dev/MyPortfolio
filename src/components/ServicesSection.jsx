@@ -1,5 +1,5 @@
 import React from 'react';
-// import './ServicesSection.css';
+import './ServicesSection.css';
 
 const services = [
   {

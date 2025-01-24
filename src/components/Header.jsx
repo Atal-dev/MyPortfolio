@@ -1,7 +1,8 @@
 // Header.js
-import React, { useState } from "react";
-// import './styles.css'; // Ensure your styles are imported
+import React, { useEffect, useState } from "react";
+import './Header.css';
 import AppointmentModal from "./AppointmentModal"; // Import the modal component
+import gsap from 'gsap'
 
 const Header = () => {
   const [showModal, setShowModal] = useState(false);
@@ -15,8 +16,37 @@ const Header = () => {
     setMenuOpen(!menuOpen);
   };
 
+  useEffect(() =>{
+    const contex=gsap.context(() =>{
+      var timeline =gsap.timeline()
+
+      gsap.from(".logo",{
+    y:-30,
+    opacity:0,
+    duration:0.5,
+    delay:0.5
+})
+gsap.from(".appointment-button",{
+  y:-30,
+  opacity:0,
+  duration:0.5,
+  delay:0.5
+})
+gsap.from("ul li a",{
+    y:-20,
+    opacity:0,
+    duration:0.2,
+    // delay:0.5,
+    stagger:0.2
+})
+    });
+    return () => contex.revert();
+  },[]);
+  
+
   return (
     <>
+    
       <header>
         <nav>
           {/* Toggle button for responsive menu */}

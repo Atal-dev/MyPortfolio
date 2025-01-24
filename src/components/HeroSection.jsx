@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import profilePic from '../assets/profile-pic.jpg'; 
 import CV from '../assets/Devanshu_Atal_CV.pdf'
@@ -6,17 +6,59 @@ import { FaInstagram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
+import gsap from 'gsap';
+import { TweenMax, Linear } from "gsap";
+
+import './HeroSection.css'
 
 const HeroSection = () => {
+
+  useEffect(() =>{
+    const contex=gsap.context(() =>{
+      gsap.from(".hero-photo",{
+          y:200,
+          duration:2,
+          opacity:0,
+          // scale:5,
+      });
+      gsap.from("h1",{
+    y:20,
+    duration:1,
+    opacity:0,
+    scale:1.2
+})
+
+gsap.from(".hero-content p",{
+  y:20,
+  duration:1,
+  opacity:0,
+  scale:1.2
+})
+gsap.from(".cv-button a",{
+  y:20,
+  duration:1,
+  opacity:0,
+  // scale:1.2
+})
+gsap.from(".social-icons a",{
+  y:20,
+  duration:0.5,
+  opacity:0,
+  scale:1.2,
+  stagger:0.3
+})
+
+      
+      
+
+    });
+    return () => contex.revert();
+  },[]);
   return (
     <section id="hero" className="hero-section">
-      <motion.div
-        initial={{ opacity: 0, y: -50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-        className="hero-content"
+      <div className="hero-content"
       >
-        <h1>Hello, I'm <span>DEVANSHU ATAL</span>  Front-end Developer</h1>
+        <h1>Hello, I'm <span>DEVANSHU ATAL <span></span></span>  Front-end Developer</h1>
         <p>Building dynamic and responsive web applications.</p>
         <p>Experienced frontend developer with a passion for creating visually stunning and user-friendly websites</p>
 
@@ -31,7 +73,7 @@ const HeroSection = () => {
           <a href="https://www.instagram.com/its____atal.dev_22/"><FaInstagram /></a>
           <a href="#pinterest"><FaTwitter /></a>
         </div>
-      </motion.div>
+      </div>
       
       {/* Photo with up and down float animation */}
       <motion.div

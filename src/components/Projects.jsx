@@ -1,5 +1,5 @@
 import React from 'react'
-// import './Portfolio.css'
+import './Projects.css'
 import { FaLink } from "react-icons/fa";
 // import project1 from '../../src/assets/project1.png'
 
