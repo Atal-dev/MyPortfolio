@@ -60,12 +60,12 @@
   }
   
   .social-icons a {
-    color: white;
+    color: var(--text-color);
     transition: color 0.3s ease;
   }
   
   .social-icons a:hover {
-    color: var(--text-color);
+    color: var(--text2-color);
   }
   
   .hero-photo {

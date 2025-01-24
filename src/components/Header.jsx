@@ -67,7 +67,7 @@ gsap.from("ul li a",{
 
           {/* Links in the middle */}
           <div className={`nav-links ${menuOpen ? "open" : ""}`}>
-            <ul onClick={toggleMenu}>
+            <ul>
               <li><a href="#hero">Home</a></li>
               <li><a href="#about">About</a></li>
               <li><a href="#skills">Skills</a></li>

@@ -33,20 +33,21 @@ gsap.from(".hero-content p",{
   duration:1,
   opacity:0,
   scale:1.2
-})
+});
 gsap.from(".cv-button a",{
   y:20,
   duration:1,
   opacity:0,
   // scale:1.2
-})
+});
 gsap.from(".social-icons a",{
   y:20,
   duration:0.5,
   opacity:0,
   scale:1.2,
   stagger:0.3
-})
+});
+
 
       
       

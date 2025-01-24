@@ -12,6 +12,7 @@ import Footer from './components/Footer';
 import ExperienceSection from './components/ExperienceSection';
 import ServicesSection from './components/ServicesSection';
 import Theme from './components/Theme';
+import Wave from './components/WaveBG/Wave'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -20,6 +21,7 @@ function App() {
   return (
     <>
        <div className="App">
+        <Wave/>
       <Theme/>
       <Header />
       <HeroSection />
